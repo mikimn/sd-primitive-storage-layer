@@ -14,4 +14,4 @@ fun write(key: ByteArray, value: ByteArray) = Unit
  * @param key Data to be used as a key.
  * @return Value associated with [key], or null.
  */
-fun read(key: ByteArray): ByteArray? = byteArrayOf()
+fun read(key: ByteArray): ByteArray? = null
