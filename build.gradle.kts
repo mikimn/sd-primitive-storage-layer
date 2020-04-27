@@ -13,6 +13,9 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    implementation(kotlin("reflect"))
+    implementation("com.google.inject", "guice", "4.2.3")
+    implementation("dev.misfitlabs.kotlinguice4", "kotlin-guice", "1.4.1")
 }
 
 tasks.withType<KotlinCompile> {
