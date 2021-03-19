@@ -1,6 +1,6 @@
 package il.ac.technion.cs.softwaredesign.storage
 
-import com.authzee.kotlinguice4.KotlinModule
+import dev.misfitlabs.kotlinguice4.KotlinModule
 import il.ac.technion.cs.softwaredesign.storage.impl.SecureStorageFactoryImpl
 
 class SecureStorageModule : KotlinModule() {

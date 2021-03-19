@@ -1,7 +1,7 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
-    kotlin("jvm") version "1.3.31"
+    kotlin("jvm") version "1.4.30"
 }
 
 group = "il.ac.technion.cs.softwaredesign"
@@ -13,9 +13,11 @@ repositories {
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
-    compile(kotlin("reflect"))
-    compile("com.google.inject", "guice", "4.2.2")
-    compile("com.authzee.kotlinguice4", "kotlin-guice", "1.3.0")
+    implementation(kotlin("reflect"))
+    implementation("com.google.inject", "guice", "4.2.3")
+    implementation("dev.misfitlabs.kotlinguice4", "kotlin-guice", "1.4.1")
 }
 
-tasks.withType<KotlinCompile> { kotlinOptions.jvmTarget = "1.8" }
+tasks.withType<KotlinCompile> {
+    kotlinOptions.jvmTarget = "1.8"
+}
